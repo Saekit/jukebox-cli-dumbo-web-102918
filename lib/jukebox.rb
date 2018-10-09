@@ -26,7 +26,7 @@ end
 
 def play(songs)
   puts "Please enter a song name or number:"
-  user_response = gets.chomp
+  user_response = gets.downcase.chomp
   songs.each.with_index(1) do |song, num| # if response is a number, return index number
     if user_response == String(num) || user_response == song
       puts "Playing #{song}"
