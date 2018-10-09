@@ -50,10 +50,10 @@ end
 
 def run(songs)
   help
-  command = ""
+
   until command == "exit"
     puts "Please enter a command:"
-    command = gets.downcase.chomp
+    command = gets.chomp
     case command
     when "list"
       list(songs)
