@@ -51,9 +51,9 @@ end
 def run
   help
   puts "Please enter a command:"
-  response = gets.chomp
-  until response == "exit"
-    case response
+  command = gets.chomp
+  until command == "exit"
+    case command
     when "list"
       list(songs)
     when "play"
