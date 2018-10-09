@@ -31,3 +31,9 @@ def list(songs)
   puts "8. Harry Chapin - Cats in the Cradle"
   puts "9. Amos Lee - Keep It Loose, Keep It Tight"
 end
+
+def play(songs)
+  puts "Please enter a song name or number:"
+  user_response = gets.chomp
+  if user_response ==
+end
