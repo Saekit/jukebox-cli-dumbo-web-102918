@@ -50,9 +50,10 @@ end
 
 def run
   help
+  command = ""
   until command == "exit"
     puts "Please enter a command:"
-    command = gets.chomp
+    command = gets.downcase.chomp
     case command
     when "list"
       list(songs)
@@ -62,6 +63,8 @@ def run
       help
     when "exit"
       exit_jukebox
+    else
+      help
     end
   end
 end
