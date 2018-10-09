@@ -49,10 +49,12 @@ def exit_jukebox
 end
 
 def run
-  return help
+  help
   puts "Please enter a command:"
   command = gets.chomp
   until command == "exit"
+    puts "Please enter a command:"
+    command = gets.chomp
     case command
     when "list"
       list(songs)
