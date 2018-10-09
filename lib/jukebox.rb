@@ -52,14 +52,15 @@ def run
   help
   puts "Please enter a command:"
   response = gets.chomp
-  case response
-  when "list"
-    list(songs)
-  when "play"
-    play(songs)
-  when "help"
-    help
-  when "exit"
-    exit_jukebox
+  until response == "exit"
+    case response
+    when "list"
+      list(songs)
+    when "play"
+      play(songs)
+    when "help"
+      help
+    when "exit"
+      exit_jukebox
   end
 end
