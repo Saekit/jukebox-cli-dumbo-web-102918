@@ -23,6 +23,7 @@ end
 def list(songs)
   songs.each.with_index(1) {|song, num| puts "#{num}. #{song}"}
 end
+list(songs)
 
 def play(songs)
   puts "Please enter a song name or number:"
